@@ -25,7 +25,7 @@ public class playercontroler : MonoBehaviour
         x = ipm.x;z=ipm.y;
     }
     void FixedUpdate()
-    {
+    {//transform.translate(0,0,0); this moves witout rigidbody without gravity
         Vector3 mt= new Vector3(x,0,z);
         rb.AddForce(mt*11);
     }
