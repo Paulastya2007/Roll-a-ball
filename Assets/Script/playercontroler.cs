@@ -27,7 +27,7 @@ Time.timeScale = 0;
     }
 
     void FixedUpdate()
-    {//transform.translate(0,0,0); this moves witout rigidbody without gravity
+    {
         Vector3 mt= new Vector3(x,0,z);
         rb.AddForce(mt*11); pmk++;
         timer.text = pmk.ToString();
